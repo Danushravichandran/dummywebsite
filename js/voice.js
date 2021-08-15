@@ -12,6 +12,8 @@ recognition.addEventListener("result", (e) => {
     .map((result) => result[0])
     .map((result) => result.transcript)
     .join("");
+   console.log(text);
+
 
   p.innerText = text;
   if (e.results[0].isFinal) {
