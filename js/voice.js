@@ -17,9 +17,9 @@ recognition.onresult =function(event)
   
   const transcript=event.results[current][0].transcript;
   content.textContent=transcript;
+  console.log(transcript);
   gohere(transcript);
-  
-   console.log(event);
+   
 }
 
 btn.addEventListener('click',() =>{
@@ -28,6 +28,7 @@ btn.addEventListener('click',() =>{
 
 function gohere(message)
 {
+     console.log("inside the gohere function daa");
   if(message=="Go to product page")
   {
     console.log("opening pdt page");
