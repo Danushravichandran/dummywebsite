@@ -13,6 +13,7 @@ recognition.onstart =function() {
 
 recognition.onresult =function(event)
 {
+   console.log("inside teh onresult  ", event);
   const current=event.resultIndex;
   
   const transcript=event.results[current][0].transcript;
@@ -20,7 +21,7 @@ recognition.onresult =function(event)
   console.log(transcript);
   gohere(transcript);
    
-}
+};
 
 btn.addEventListener('click',() =>{
   recognition.start();
