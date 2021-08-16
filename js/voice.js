@@ -39,7 +39,7 @@ function gohere(message)
   if(message.includes("scroll down"))
   {
     console.log("opening pdt page");
-    document.querySelector('.content').scrollIntoView({
+    document.querySelector('.footer-center').scrollIntoView({
                 behavior: 'smooth',
                 block: "end"
                });
