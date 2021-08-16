@@ -6,12 +6,12 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 const recognition = new SpeechRecognition();
 
-recognition.onstart()=function() {
+recognition.onstart =function() {
   alert('You can speak in this browser');
   console.log('You can speak in this browser');
 };
 
-recognition.onresult()=function(event)
+recognition.onresult =function(event)
 {
   const current=event.resultIndex;
   
