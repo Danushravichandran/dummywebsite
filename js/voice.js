@@ -35,6 +35,17 @@ function gohere(message)
     console.log("opening pdt page");
     window.open("https://danushravichandran.github.io/dummywebsite/product.html");
   }
+ 
+  if(message.includes("scroll down"))
+  {
+    console.log("opening pdt page");
+    document.querySelector('.content').scrollIntoView({
+                behavior: 'smooth',
+                block: "end"
+               });
+  }
+ 
+ 
 }
 
 
