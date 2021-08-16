@@ -2,12 +2,11 @@ const btn=document.querySelector('.talk');
 const content=document.querySelector('.content');
 
 
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 
-recognition.start()=function()
-{
+recognition.onstart()=function() {
   alert('You can speak in this browser');
   console.log('You can speak in this browser');
 };
