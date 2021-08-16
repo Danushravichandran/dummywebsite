@@ -30,7 +30,7 @@ btn.addEventListener('click',() =>{
 function gohere(message)
 {
      console.log("inside the gohere function daa");
-  if(message=="Go to product page")
+  if(message.includes("Go to product page"))
   {
     console.log("opening pdt page");
     window.open("https://danushravichandran.github.io/dummywebsite/product.html");
