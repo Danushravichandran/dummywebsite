@@ -9,6 +9,7 @@ const recognition = new SpeechRecognition();
 recognition.onstart()=function()
 {
   alert('You can speak in this browser');
+  console.log('You can speak in this browser');
 }
 
 recognition.onresult()=function(event)
