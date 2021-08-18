@@ -469,7 +469,7 @@ li {
 }
 
 .product-header {
-  position: relative;
+  
   height: 35rem;
   background-color: #f6f2f1;
   transition: all 300ms ease-in-out;
