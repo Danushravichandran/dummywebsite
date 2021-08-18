@@ -47,7 +47,7 @@ function gohere(message)
  
  var str = message;
  var replaced = str.split(' ').join('_');
- var staticURL='https://my-json-server.typicode.com/Danushravichandran/mockjsonwebspeechapi/db'+replaced;
+ var staticURL='https://my-json-server.typicode.com/Danushravichandran/mockjsonwebspeechapi/db/'+replaced;
  
  $.getJSON(staticURL, function(data){
                      for(i=0;i<data.length;i++)
