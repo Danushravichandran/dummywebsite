@@ -49,8 +49,7 @@ h4 {
 }
 
 #mybutton {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: -4px;
   right: 10px;
 }
