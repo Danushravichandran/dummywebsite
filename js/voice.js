@@ -60,17 +60,24 @@ function gohere(message)
      //           block: "end"
          //      });
   
+   let paused=true;
+   
    if(message.includes("scroll down"))
    {
    let id=setInterval( function()
    {
     window.scrollBy(0,150);
    }, 10);
+    paused=false;
    }
+   
+   
    
   if(message.includes("stop"))
   {
+   paused=false;
    clearInterval(id);
+   paused=true;
   }
    
   }
