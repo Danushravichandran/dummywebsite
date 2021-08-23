@@ -27,23 +27,51 @@ btn.addEventListener('click',() =>{
   recognition.start();
 });
 
+
 function gohere(message)
 {
-     console.log("inside the gohere function daa");
-  if(message.includes("go to product page"))
-  {
-    console.log("opening pdt page");
-    window.open("https://danushravichandran.github.io/dummywebsite/product.html");
-  }
+     //console.log("inside the gohere function daa");
+ // if(message.includes("go to product page"))
+ // {
+  //  console.log("opening pdt page");
+//    window.open("https://danushravichandran.github.io/dummywebsite/product.html");
+//  }
+ 
+ 
+ if(message.includes("products")|| message.includes("click products") || message.includes("open products"))
+{
+ console.log("opening pdt page");
+  window.open("https://danushravichandran.github.io/dummywebsite/product.html");
+}
+ else if(message.includes("cart")|| message.includes("click cart") || message.includes("open cart"))
+{
+ console.log("opening cart page");
+  window.location.replace("https://danushravichandran.github.io/dummywebsite/cart.html");
+}
+ 
+ 
  
   if(message.includes("scroll down"))
   {
-    console.log("opening pdt page");
-    document.querySelector('.footer-center').scrollIntoView({
-                behavior: 'smooth',
-                block: "end"
-               });
+   // console.log("opening pdt page");
+   // document.querySelector('.footer-center').scrollIntoView({
+       //         behavior: 'smooth',
+     //           block: "end"
+         //      });
+   
+   setInterval( function()
+   {
+    window.scrollBy(0,2);
+   }, 10);
+   
+  }  
+   
+   if(message.includes("stop"))
+  {
+   clearInterval(message.includes("scroll down"));
   }
+   
+ 
  
  var str = message;
  var replaced = str.split(' ').join('_');
