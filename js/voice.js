@@ -49,6 +49,11 @@ function gohere(message)
  console.log("opening cart page");
   window.location.replace("https://danushravichandran.github.io/dummywebsite/cart.html");
 }
+ else if(message.includes("add to cart"))
+{
+ console.log("opening cart page");
+  window.location.replace("https://danushravichandran.github.io/dummywebsite/cart.html");
+}
  
  
  
@@ -78,7 +83,7 @@ function gohere(message)
   {
    //paused=false;
    clearInterval(id);
-   paused=true;
+  // paused=true;
   }
    
   }
