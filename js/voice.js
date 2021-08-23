@@ -64,6 +64,7 @@ function gohere(message)
    
    if(message.includes("scroll down"))
    {
+     paused=false;
    let id=setInterval( function()
    {
     window.scrollBy(0,150);
@@ -75,7 +76,7 @@ function gohere(message)
    
   if(message.includes("stop"))
   {
-   paused=false;
+   //paused=false;
    clearInterval(id);
    paused=true;
   }
