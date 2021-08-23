@@ -55,6 +55,7 @@ function scrollhere()
     window.scrollBy(0,150);
    }, 10);
    // paused=false;
+      console.log("running id "+ id);
    return id; 
 }
 
@@ -62,7 +63,7 @@ function scrollhere()
 function stopscrollhere()
 {
    clearInterval(scrollerId);
-   console.log("clear iterval id printing id"+ id)
+   console.log("clear iterval id "+ scrollerId);
 }
 
 
@@ -95,8 +96,8 @@ function gohere(message)
  
  
  
-  if(message.includes("scroll down")||message.includes("stop"))
-  {
+  //if(message.includes("scroll down")||message.includes("stop"))
+  //{
    
 
    // console.log("opening pdt page");
@@ -106,31 +107,31 @@ function gohere(message)
          //      });
   
   // let paused=true;
-   let id;
+   //let id;
    
-   if(message.includes("scroll down"))
-   {
+  // if(message.includes("scroll down"))
+   //{
     // paused=false;
-   id=setInterval( function()
-   {
-    window.scrollBy(0,150);
-   }, 10);
+   //id=setInterval( function()
+   //{
+    //window.scrollBy(0,150);
+  // }, 10);
    // paused=false;
-   }
+   //}
    
-        console.log("printing id"+ id)
+     //   console.log("printing id"+ id)
 
    
-  if(message.includes("stop"))
-  {
+ // if(message.includes("stop"))
+  //{
    //paused=false;
-   console.log("inside stop daaaaa")
-   clearInterval(id);
-   console.log("clear iterval id printing id"+ id)
+   //console.log("inside stop daaaaa")
+  // clearInterval(id);
+   //console.log("clear iterval id printing id"+ id)
   // paused=true;
-  }
+  //}
    
-  }
+  //}
  
  
  var str = message;
