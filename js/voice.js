@@ -61,7 +61,7 @@ function gohere(message)
    
    setInterval( function()
    {
-    window.scrollBy(0,2);
+    window.scrollBy(0,200);
    }, 10);
    
   }  
