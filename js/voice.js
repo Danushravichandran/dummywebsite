@@ -24,13 +24,47 @@ recognition.onresult =function(event)
   content.textContent=transcript;
   console.log(transcript); 
  
+   if(transcript.includes("scroll down"))
+   {
+      scrollerId=scrollhere();
+   }
+   
+   if(transcript.includes("stop"))
+   {
+      stopscrollhere();
+   }
+   
   gohere(transcript);
+   
+   
    
 };
 
 btn.addEventListener('click',() =>{
   recognition.start();
 });
+
+
+function scrollhere()
+{
+   
+   
+    // paused=false;
+  let id=setInterval( function()
+   {
+    window.scrollBy(0,150);
+   }, 10);
+   // paused=false;
+   return id; 
+}
+
+
+function stopscrollhere()
+{
+   clearInterval(scrollerId);
+   console.log("clear iterval id printing id"+ id)
+}
+
 
 
 function gohere(message)
