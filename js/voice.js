@@ -77,11 +77,13 @@ function gohere(message)
    // paused=false;
    }
    
-   
+        console.log("printing id"+id)
+
    
   if(message.includes("stop"))
   {
    //paused=false;
+   console.log("inside stop daaaaa")
    clearInterval(id);
   // paused=true;
   }
