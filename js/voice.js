@@ -18,7 +18,8 @@ recognition.onresult =function(event)
   
   const transcript=event.results[current][0].transcript;
   content.textContent=transcript;
-  console.log(transcript);
+  console.log(transcript); 
+ 
   gohere(transcript);
    
 };
@@ -51,26 +52,28 @@ function gohere(message)
  
  
  
-  if(message.includes("scroll down"))
+  if(message.includes("scroll down")||message.includes("stop"))
   {
    // console.log("opening pdt page");
    // document.querySelector('.footer-center').scrollIntoView({
        //         behavior: 'smooth',
      //           block: "end"
          //      });
-   
-   setInterval( function()
+  
+   if(message.includes("scroll down"))
    {
-    window.scrollBy(0,200);
+   let id=setInterval( function()
+   {
+    window.scrollBy(0,150);
    }, 10);
+   }
    
-  }  
-   
-   if(message.includes("stop"))
+  if(message.includes("stop"))
   {
-   clearInterval(message.includes("scroll down"));
+   clearInterval(id);
   }
    
+  }
  
  
  var str = message;
