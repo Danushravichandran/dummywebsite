@@ -85,7 +85,10 @@ function gohere(message)
   {
    //paused=false;
    console.log("inside stop daaaaa")
-   clearInterval(id);
+   clearInterval(id=setInterval( function()
+   {
+    window.scrollBy(0,150);
+   }, 10));
   // paused=true;
   }
    
