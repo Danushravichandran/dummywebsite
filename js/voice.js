@@ -65,16 +65,16 @@ function gohere(message)
      //           block: "end"
          //      });
   
-   let paused=true;
+  // let paused=true;
    
    if(message.includes("scroll down"))
    {
-     paused=false;
+    // paused=false;
    let id=setInterval( function()
    {
     window.scrollBy(0,150);
    }, 10);
-    paused=false;
+   // paused=false;
    }
    
    
