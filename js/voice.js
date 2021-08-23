@@ -59,6 +59,9 @@ function gohere(message)
  
   if(message.includes("scroll down")||message.includes("stop"))
   {
+   
+   recognition.continuous = true;
+
    // console.log("opening pdt page");
    // document.querySelector('.footer-center').scrollIntoView({
        //         behavior: 'smooth',
