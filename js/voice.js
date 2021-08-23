@@ -78,17 +78,15 @@ function gohere(message)
    // paused=false;
    }
    
-        console.log("printing id"+id)
+        console.log("printing id"+ id)
 
    
   if(message.includes("stop"))
   {
    //paused=false;
    console.log("inside stop daaaaa")
-   clearInterval(setInterval( function()
-   {
-    window.scrollBy(0,150);
-   }, 10));
+   clearInterval(id);
+   console.log("clear iterval id printing id"+ id)
   // paused=true;
   }
    
