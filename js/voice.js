@@ -66,11 +66,12 @@ function gohere(message)
          //      });
   
   // let paused=true;
+   let id;
    
    if(message.includes("scroll down"))
    {
     // paused=false;
-   let id=setInterval( function()
+   id=setInterval( function()
    {
     window.scrollBy(0,150);
    }, 10);
