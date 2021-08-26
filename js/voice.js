@@ -83,16 +83,12 @@ function gohere(message)
  console.log("opening pdt page");
   window.open("https://danushravichandran.github.io/dummywebsite/product.html");
 }
- else if(message.includes("cart")|| message.includes("click cart") || message.includes("open cart"))
+ else if(message.includes("cart")|| message.includes("click cart") || message.includes("open cart")|| message.includes("add to cart"))
 {
  console.log("opening cart page");
   window.location.replace("https://danushravichandran.github.io/dummywebsite/cart.html");
 }
- else if(message.includes("add to cart"))
-{
- console.log("opening cart page");
-  window.location.replace("https://danushravichandran.github.io/dummywebsite/cart.html");
-}
+
  
  
  
